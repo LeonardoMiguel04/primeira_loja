@@ -94,7 +94,7 @@ h4,  h2, h4, h3{
     position: relative;
     bottom: 2%;
 }
-
+/*
 .gol{
     position: relative;
     width: 250px;
@@ -115,8 +115,22 @@ h4,  h2, h4, h3{
     left: 15%;
     bottom: 2%;
 }
+*/
 
 .fone{
     position: relative;
     bottom: 20%;
+}
+
+.elemento{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.caixa{
+    border: 10px red solid;
+    width: 200px;
+    height: 200px
 }
