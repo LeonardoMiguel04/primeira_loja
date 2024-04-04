@@ -58,7 +58,7 @@ footer{
 }
 
 .card{
-    border: 2px solid;
+    border: 3px solid;
     width: 275px;
     height: 350px;
     display: flex;
@@ -78,10 +78,10 @@ footer{
 }
 
 .card:hover{
-    background-color: black;
     color: white;
+    background: linear-gradient(90deg, #ffcc2f, #ef5734);
+    border-color: rgb(243, 115, 243)
 }
-
 .logo{
     width: 220px;
     height: 220px;
@@ -92,5 +92,14 @@ footer{
     height: 50px;
     position: absolute;
     top: 20px;
+    right: 90px;
+}
+
+.emoji1{
+    position: absolute;
+    top: 20px;
     right: 20px;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
 }
