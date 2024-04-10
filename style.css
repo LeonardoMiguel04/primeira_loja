@@ -3,6 +3,11 @@
     src: url(fonts/Crang.ttf);
 }
 
+@font-face {
+    font-family: Pixel2;
+    src: url(fonts/Minecraft.ttf);
+}
+
 
 body{
     display: grid;
@@ -97,11 +102,16 @@ footer{
 }
 
 .lupa{
-    width: 50px;
-    height: 50px;
     position: absolute;
     top: 20px;
     right: 90px;
+    border: none;
+    background-color: rgb(246, 246, 239);
+}
+
+button img{
+    width: 50px;
+    height: 50px;
 }
 
 .emoji1{
@@ -118,4 +128,16 @@ h1{
     top: 80px;
     left: 40px;
     font-family: Pixel;
+}
+
+.conta{
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    font-family: Pixel2;
+    text-decoration: none;
+
+
 }
