@@ -22,11 +22,10 @@ body{
 
 header{
     grid-area: cabeca;
-    background-color: rgb(246, 246, 239);   
+    background-color: #561C9F;   
     border: solid 2px 0px 0px ;
     position: relative;
     font-family: monospace;
-
 }
 
 aside{
@@ -34,17 +33,22 @@ aside{
     text-align: center;
     border-color: black;
     border-style: solid;
+    background-color: #360657;
+    background-image: url(file:///C:/Users/Cliente/Downloads/primeira_loja-main/imagens/NEXUS.gif);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main{
     grid-area: corpo;
-    background-color: rgb(228, 228, 228);
+    background-color: #C08FFF;
     text-align: center;
 }
 
+
 footer{
     grid-area: pé;
-    background-color: rgb(22, 19, 19);
+    background-color: rgb(34, 32, 32);
     text-align: center;
 }
 
@@ -70,7 +74,7 @@ footer{
 }
 
 .card{
-    border: 3px black solid;
+    border: 3px #343434 solid;
     width: 275px;
     height: 350px;
     display: flex;
@@ -78,7 +82,7 @@ footer{
     justify-content: center;
     text-align: center;
     margin: 20px;
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: white;
     border-radius: 20px;
 }
@@ -86,7 +90,7 @@ footer{
 
 .card:hover{
     color: white;
-    background: linear-gradient(90deg, #ffcc2f, #ef5734);
+    background: linear-gradient(90deg, #b587e6, #d169d1);
     border-color: rgb(243, 115, 243)
 }
 .logo{
@@ -101,7 +105,7 @@ footer{
     top: 20px;
     right: 90px;
     border: none;
-    background-color: rgb(246, 246, 239);
+    background-color: #561C9F;
 }
 
 button img{
@@ -131,10 +135,6 @@ h1{
     right: 5px;
     width: 50px;
     height: 50px;
-    font-family: Pixel2;
-    text-decoration: none;
-
-
 }
 
 .card img{
@@ -142,10 +142,55 @@ h1{
     width: 100px;
     top: 10px;
     position: relative;
-    left: 90px;
 }
 
 .botaocard{
     text-decoration: none;
     color: black;
+}
+
+.titulo{
+    font-size: 80px;
+    position: absolute;
+    left: 780px;
+    top: 20px;
+}
+
+.subtitulo{
+    font-family: Pixel2;
+    position: absolute;
+    left: 810px;
+    top: 150px;
+}
+
+.maeoferta{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cardoferta{
+    border: 3px #343434 solid;
+    width: 275px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.ofertatext{
+    color: #8C52FF;
+}
+
+.cardoferta:hover{
+    color: white;
+    background: linear-gradient(90deg, #b587e6, #d169d1);
+    border-color: rgb(243, 115, 243)
 }
