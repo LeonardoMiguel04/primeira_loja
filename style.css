@@ -70,24 +70,19 @@ footer{
 }
 
 .card{
-    border: 3px solid;
+    border: 3px black solid;
     width: 275px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     margin: 20px;
     transition: 0.3s;
     background-color: white;
     border-radius: 20px;
-
 }
 
-.card img{
-    height: 80px;
-    width: 80px;
-}
 
 .card:hover{
     color: white;
@@ -139,5 +134,19 @@ h1{
     font-family: Pixel2;
     text-decoration: none;
 
+
+}
+
+.card img{
+    height: 100px;
+    width: 100px;
+    top: 10px;
+    position: relative;
+    left: 90px;
+}
+
+.botaocard{
+    text-decoration: none;
+    color: black;
 
 }
