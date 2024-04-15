@@ -186,11 +186,18 @@ h1{
 }
 
 .ofertatext{
-    color: #8C52FF;
+    color: #ff0000;
 }
 
 .cardoferta:hover{
     color: white;
     background: linear-gradient(90deg, #b587e6, #d169d1);
     border-color: rgb(243, 115, 243)
+}
+
+.cardoferta img{
+    height: 150px;
+    width: 150px;
+    top: 10px;
+    position: relative;
 }
