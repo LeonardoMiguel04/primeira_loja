@@ -1,94 +1,100 @@
+/* Define a fonte personalizada Pixel2 */
 @font-face {
     font-family: Pixel2;
     src: url(fonts/Minecraft.ttf);
 }
 
+/* Estilização do contêiner de login */
 .login{
-    position: absolute;
-    left: 750px;
-    top: 200px;
-    border: 5px solid purple;
-    border-radius: 50px 0px 50px 0px;
-    border-style:inset;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-
+    position: absolute; /* Define o posicionamento absoluto do elemento */
+    left: 750px; /* Define a distância do elemento à esquerda */
+    top: 200px; /* Define a distância do elemento ao topo */
+    border: 5px solid purple; /* Define uma borda sólida de 5px na cor roxa */
+    border-radius: 50px 0px 50px 0px; /* Define o raio dos cantos da borda */
+    border-style: inset; /* Define o estilo da borda como "inset" */
+    width: 400px; /* Define a largura do elemento */
+    height: 400px; /* Define a altura do elemento */
+    display: flex; /* Define o elemento como um flex container */
+    flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+    text-align: center; /* Alinha o texto ao centro */
+    background-color: white; /* Define a cor de fundo como branca */
 }
 
+/* Estilização do corpo do documento */
 body{
-    background: linear-gradient(90deg, #8e1d9e, #b764c5);;
+    background: linear-gradient(90deg, #8e1d9e, #b764c5); /* Define um fundo com gradiente linear */
 }
 
+/* Estilização do título e dos labels dentro do contêiner de login */
 .login h1, label{
-    color: rgb(132, 0, 255);
-    font-family: Pixel2;
-
+    color: rgb(132, 0, 255); /* Define a cor do texto como roxo */
+    font-family: Pixel2; /* Define a fonte do texto como Pixel2 */
 }
 
-
+/* Estilização do botão dentro do contêiner de login */
 .botao{
-    position: absolute;
-    top: 280px;
-    left: 100px;
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    color: rgb(0, 245, 20);
-    background-color: purple;
-    border-color: purple;
+    position: absolute; /* Define o posicionamento absoluto do elemento */
+    top: 280px; /* Define a distância do botão ao topo */
+    left: 100px; /* Define a distância do botão à esquerda */
+    width: 200px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    border-radius: 20px; /* Define o raio dos cantos do botão */
+    color: rgb(0, 245, 20); /* Define a cor do texto como verde */
+    background-color: purple; /* Define a cor de fundo como roxa */
+    border-color: purple; /* Define a cor da borda como roxa */
 }
 
-
+/* Estilização dos inputs */
 input{
-    padding: 5px;
-    margin: 20px;
+    padding: 5px; /* Adiciona um espaço interno ao redor do conteúdo do input */
+    margin: 20px; /* Adiciona uma margem externa ao redor do input */
 }
 
+/* Estilização do título principal */
 h1{
-    text-align: center;
-    text-decoration: chartreuse wavy overline underline;
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: chartreuse wavy overline underline; /* Define a decoração do texto */
 } 
 
+/* Estilização do link de cadastro */
 .linkcad{
-    position: absolute;
-    left: 85px;
-    top: 350px;
-    text-decoration: none;
-    color: purple;
+    position: absolute; /* Define o posicionamento absoluto do elemento */
+    left: 85px; /* Define a distância do link à esquerda */
+    top: 350px; /* Define a distância do link ao topo */
+    text-decoration: none; /* Remove a decoração do texto */
+    color: purple; /* Define a cor do texto como roxa */
 }
 
+/* Estilização do contêiner de cadastro */
 .cadastro{
-    position: absolute;
-    left: 750px;
-    top: 150px;
-    border: 5px solid purple;
-    border-radius: 50px 0px 50px 0px;
-    border-style:inset;
-    width: 400px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: white;
-
+    position: absolute; /* Define o posicionamento absoluto do elemento */
+    left: 750px; /* Define a distância do elemento à esquerda */
+    top: 150px; /* Define a distância do elemento ao topo */
+    border: 5px solid purple; /* Define uma borda sólida de 5px na cor roxa */
+    border-radius: 50px 0px 50px 0px; /* Define o raio dos cantos da borda */
+    border-style: inset; /* Define o estilo da borda como "inset" */
+    width: 400px; /* Define a largura do elemento */
+    height: 600px; /* Define a altura do elemento */
+    display: flex; /* Define o elemento como um flex container */
+    flex-direction: column; /* Define a direção dos elementos filhos como coluna */
+    text-align: center; /* Alinha o texto ao centro */
+    background-color: white; /* Define a cor de fundo como branca */
 }
 
+/* Estilização do botão dentro do contêiner de cadastro */
 .botao2{
-    position: absolute;
-    top: 500px;
-    left: 100px;
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    color: rgb(0, 245, 20);
-    background-color: purple;
-    border-color: purple;
+    position: absolute; /* Define o posicionamento absoluto do elemento */
+    top: 500px; /* Define a distância do botão ao topo */
+    left: 100px; /* Define a distância do botão à esquerda */
+    width: 200px; /* Define a largura do botão */
+    height: 40px; /* Define a altura do botão */
+    border-radius: 20px; /* Define o raio dos cantos do botão */
+    color: rgb(0, 245, 20); /* Define a cor do texto como verde */
+    background-color: purple; /* Define a cor de fundo como roxa */
+    border-color: purple; /* Define a cor da borda como roxa */
 }
 
+/* Estilização do título e dos labels dentro do contêiner de cadastro */
 .cadastro h1, label{
     color: rgb(132, 0, 255);
     font-family: Pixel2;
