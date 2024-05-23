@@ -113,6 +113,14 @@ footer {
 }
 /* Adiciona efeitos de hover para o cartão, mudando a cor do texto, o fundo para um gradiente e a cor da borda. */
 
+.carrinhoimg{
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    width: 60px;
+    height: 60px;
+}
+
 .lupa {
     position: absolute;
     top: 20px;
