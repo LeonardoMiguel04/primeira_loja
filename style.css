@@ -120,6 +120,7 @@ footer {
     width: 60px;
     height: 60px;
 }
+/* Define o estilo de um botão de carrinho, posicionando-o aboslutamente no canto superior direito*/
 
 .lupa {
     position: absolute;
