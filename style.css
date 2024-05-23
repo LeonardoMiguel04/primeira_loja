@@ -416,6 +416,7 @@ ul, li a {
     left: -400px;
     color: white;
 }
+/* Define estilo para várias classes, com posicionamento relativo e cor branca. */
 
 .dois{
     position: relative;
@@ -423,6 +424,7 @@ ul, li a {
     color: white;
     top: -50px;
 }
+/* Define estilo para várias classes, com posicionamento relativo e cor branca. */
 
 .tres{
     position: relative;
@@ -430,6 +432,7 @@ ul, li a {
     top: -100px;
     color: white;
 }
+/* Define estilo para várias classes, com posicionamento relativo e cor branca. */
 
 .quatro{
     position: relative;
@@ -439,6 +442,7 @@ ul, li a {
     left: -100px;
 
 }
+/* Define estilo para várias classes, com posicionamento relativo, cor branca e estilo de fonte diferente. */
 
 .cinco {
     position: relative;
@@ -455,6 +459,7 @@ ul, li a {
     left: 105px;
     top: -30px;
 }
+/* Define estilo para várias classes, com posicionamento relativo e cor branca. */
 
 .sete{
     position: relative;
@@ -462,53 +467,18 @@ ul, li a {
     left: 400px;
     top: -70px;
 }
+/* Define estilo para várias classes, com posicionamento relativo e cor branca. */
 
 .oito, .nove, .dez, .onze, .doze, .treze, .quatorze{
     color: white;
 }
+/* Define para a cor branca. */
 
 hr{
     border-color: rgb(245, 121, 224);
 }
-/*
-.nove{
-    position: relative;
-    color: white;
-    left: -50px;
-}
+/* Define para a cor rosa. */
 
-.dez{
-    position: relative;
-    color: white;
-    right: -50px;
-    top: -39px;
-}
-
-.onze{
-    position: relative;
-    color: white;
-    left: -50px;
-}
-
-.doze{
-    position: relative;
-    color: white;
-    right: -50px;
-    top: -39px;
-}
-
-.treze{
-    position: relative;
-    color: white;
-    top: -30px;
-}
-
-.quatorze{
-    position: relative;
-    color: white;
-    top: -30px;
-}
-*/
 .cardcarrinho hr {
     position: relative;
     top: -90px;
@@ -519,7 +489,7 @@ hr{
     position: relative;
     border: rgb(245, 121, 224) solid;
     width: 300px;
-    height: 500px;
+    height: 470px;
     border-radius: 10px;
     left: 1300px;
     top: -205px;
@@ -527,7 +497,6 @@ hr{
 }
 
 .finalizar{
-    position: ;
     border-radius: 5px;
     background-color: rgb(47, 255, 47);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
