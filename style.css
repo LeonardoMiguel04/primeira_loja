@@ -8,6 +8,10 @@
     src: url(fonts/Minecraft.ttf);
 }
 
+@font-face {
+    font-family: Pixel3;
+    src: url(fonts/VCR_OSD_MONO_1.001.ttf);
+}
 
 body{
     display: grid;
@@ -17,7 +21,7 @@ body{
     "pé pé pé";
     grid-template-columns: 250px auto auto;
     grid-template-rows: 250px auto 250px;
-    margin: auto;
+    margin: 0;
 }
 
 header{
@@ -41,7 +45,7 @@ aside{
 
 main{
     grid-area: corpo;
-    background-color: #C08FFF;
+    background-color: #17002c;
     text-align: center;
 }
 
@@ -53,15 +57,19 @@ footer{
 }
 
 @media screen and (max-width: 800px){
-        body{
-            grid-template-areas: 
-            "cabeca"
-            "secundario"
-            "corpo"
-            "pé";
-            grid-template-columns: 1fr;
-            grid-template-rows:  auto auto auto auto;
-        }
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "secundario"
+        "corpo"
+        "pé";
+        grid-template-columns: 1fr;
+        grid-template-rows:  auto auto auto auto;
+    }
+
+    .titulo{
+        left: 200px;
+    }
 }
 
 
@@ -74,7 +82,7 @@ footer{
 }
 
 .card{
-    border: 3px #343434 solid;
+    border: 3px #000000 solid;
     width: 275px;
     height: 350px;
     display: flex;
@@ -83,7 +91,7 @@ footer{
     text-align: center;
     margin: 20px;
     transition: 0.2s;
-    background-color: white;
+    background-color: #561C9F;
     border-radius: 20px;
 }
 
@@ -93,6 +101,7 @@ footer{
     background: linear-gradient(90deg, #b587e6, #d169d1);
     border-color: rgb(243, 115, 243)
 }
+
 .logo{
     width: 220px;
     height: 220px;
@@ -105,7 +114,9 @@ footer{
     top: 20px;
     right: 90px;
     border: none;
-    background-color: #561C9F;
+    width: 50px;
+    height: 50px;
+
 }
 
 button img{
@@ -172,7 +183,7 @@ h1{
 }
 
 .cardoferta{
-    border: 3px #343434 solid;
+    border: 3px black solid;
     width: 275px;
     height: 350px;
     display: flex;
@@ -181,7 +192,7 @@ h1{
     text-align: center;
     margin: 20px;
     transition: 0.3s;
-    background-color: white;
+    background-color: #561C9F;
     border-radius: 20px;
 }
 
@@ -206,50 +217,161 @@ h1{
     border: solid black;
     width: 1000px;
     height: 1000px;
-    background-color: white;
+    background-color: #561C9F;
     position: relative;
     left: 300px;
     top: 100px;
     border-radius: 20px;
 }
 
-.tec img{
-    width: 500px;
-    height: 500px;
+.tecvid{
     position: relative;
-    left: -80px;
+    left: 200px;
+    top: -50px;
+    border-radius: 20px;
 }
 
 .textotec{
     position: relative;
     top: 70px;
-    left: 250px;
+    color: rgb(68, 0, 255);
+    font-family: pi;
+
 }
 
 .bottec{
-    border-radius: 50px;
-    background-color: orange;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 212);
     border-color: rgb(0, 0, 0);
-    width: 300px;
+    width: 200px;
     height: 50px;
     position: relative;
-    top: 250px;
+    top: 320px;
+    right: -240px;
 }
 
 
 .bottec2{
-    border-radius: 50px;
-    background-color: yellow;
+    border-radius: 10px;
+    background-color: rgb(255, 252, 79);
     border-color: rgba(0, 0, 0, 0.993);
-    width: 300px;
+    width: 200px;
     height: 50px;
     position: relative;
-    left: -50px;
-    top: 200px;
+    right: -35px;
+    top: 380px;
 }
 
 .desc{
     position: relative;
-    top: 70px;
-    left: 250px;
+    top: 400px;
+    color: rgb(32, 166, 255);
+}
+
+.price{
+    position: relative;
+    top: 420px;
+    color: rgb(255, 46, 46);
+    font-family: Pixel3;
+}
+
+ul,li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu .menuL{
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+    top: 20px;
+    left: 10px;
+}
+
+.menu .menuL span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.menu .menufake{
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+    top: 20px;
+    left: 10px;
+}
+
+.menu .menufake:checked~.menuL span:nth-child(1){
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+
+.menu .menufake:checked~.menuL span:nth-child(2){
+    opacity: 0;
+}
+
+.menu .menufake:checked~.menuL span:nth-child(3){
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul{
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 1793px;
+    background-color: rgb(34, 32, 32);
+    margin-left: -400px;
+    transition: 0.2s;
+    margin-top: 0;
+    padding: 0;
+}
+
+.menu .menufake:checked~ul{
+    margin-left: 0px;
+}
+
+.menu ul li{
+    position: relative;
+    top: 150px;
+    left: 10px;
+    padding: 10px 30px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.menu ul li a:hover{
+    color: #ff0000;
+    transition: 0.2s;
+}
+
+.cardcarrinho{
+    position: relative;
+    width: 1000px;
+    border: red solid;
+    height: 300px;
+    left: 300px;
+    top: 100px;
+
+}
+
+.cardcarrinho img{
+    width: 200px;
+    position: relative;
+    top: 50px;
 }
