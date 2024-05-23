@@ -2,18 +2,21 @@
     font-family: Pixel;
     src: url(fonts/Crang.ttf);
 }
+/* Define uma fonte personalizada chamada "Pixel" a partir do arquivo "Crang.ttf". */
 
 @font-face {
     font-family: Pixel2;
     src: url(fonts/Minecraft.ttf);
 }
+/* Define uma fonte personalizada chamada "Pixel2" a partir do arquivo "Minecraft.ttf". */
 
 @font-face {
     font-family: Pixel3;
     src: url(fonts/VCR_OSD_MONO_1.001.ttf);
 }
+/* Define uma fonte personalizada chamada "Pixel3" a partir do arquivo "VCR_OSD_MONO_1.001.ttf". */
 
-body{
+body {
     display: grid;
     grid-template-areas: 
     "cabeca cabeca cabeca"
@@ -23,16 +26,19 @@ body{
     grid-template-rows: 250px auto 250px;
     margin: 0;
 }
+/* Define o layout do corpo como um grid com áreas nomeadas e especifica colunas e linhas com tamanhos fixos e automáticos. Remove as margens do corpo. */
 
-header{
+header {
     grid-area: cabeca;
     background-color: #561C9F;   
-    border: solid 2px 0px 0px ;
+    border: solid 2px 0px 0px;
     position: relative;
     font-family: monospace;
+    text-align: center;
 }
+/* Define o cabeçalho para ocupar a área 'cabeca' do grid, com fundo roxo, borda superior, e fonte monoespaçada. */
 
-aside{
+aside {
     grid-area: secundario;
     text-align: center;
     border-color: black;
@@ -42,46 +48,50 @@ aside{
     background-repeat: no-repeat;
     background-position: center;
 }
+/* Define a barra lateral para ocupar a área 'secundario' do grid, com borda preta, fundo roxo escuro e uma imagem de fundo centrada e não repetida. */
 
-main{
+main {
     grid-area: corpo;
     background-color: #17002c;
     text-align: center;
 }
+/* Define o conteúdo principal para ocupar a área 'corpo' do grid, com fundo roxo muito escuro e texto centralizado. */
 
-
-footer{
+footer {
     grid-area: pé;
     background-color: rgb(34, 32, 32);
     text-align: center;
 }
+/* Define o rodapé para ocupar a área 'pé' do grid, com fundo cinza escuro e texto centralizado. */
 
-@media screen and (max-width: 800px){
-    body{
+@media screen and (max-width: 800px) {
+    body {
         grid-template-areas: 
         "cabeca"
         "secundario"
         "corpo"
         "pé";
         grid-template-columns: 1fr;
-        grid-template-rows:  auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
     }
+    /* Ajusta o layout para telas com largura máxima de 800px, transformando o grid em uma coluna única. */
 
-    .titulo{
+    .titulo {
         left: 200px;
     }
+    /* Ajusta a posição do elemento com a classe 'titulo' em telas pequenas. */
 }
 
-
-.mae{
+.mae {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
+/* Define um contêiner flexível com elementos espaçados uniformemente, dispostos em linha e permitindo quebra de linha, com alinhamento central. */
 
-.card{
+.card {
     border: 3px #000000 solid;
     width: 275px;
     height: 350px;
@@ -94,37 +104,26 @@ footer{
     background-color: #561C9F;
     border-radius: 20px;
 }
+/* Define estilo para um cartão, com borda preta, dimensões fixas, layout flexível em coluna, centrado, margem, transição suave, fundo roxo e cantos arredondados. */
 
-
-.card:hover{
+.card:hover {
     color: white;
     background: linear-gradient(90deg, #b587e6, #d169d1);
-    border-color: rgb(243, 115, 243)
+    border-color: rgb(243, 115, 243);
 }
+/* Adiciona efeitos de hover para o cartão, mudando a cor do texto, o fundo para um gradiente e a cor da borda. */
 
-.logo{
-    width: 220px;
-    height: 220px;
-    position: absolute;
-    left: 850px;
-}
-
-.lupa{
+.lupa {
     position: absolute;
     top: 20px;
     right: 90px;
     border: none;
     width: 50px;
     height: 50px;
-
 }
+/* Define o estilo de um botão de lupa, posicionando-o absolutamente no canto superior direito. */
 
-button img{
-    width: 50px;
-    height: 50px;
-}
-
-.emoji1{
+.emoji1 {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -132,57 +131,52 @@ button img{
     height: 50px;
     transition: 0.3s;
 }
+/* Define o estilo para um emoji, com posicionamento absoluto, dimensões fixas e transição suave. */
 
 h1{
-    position: absolute;
-    top: 80px;
-    left: 40px;
     font-family: Pixel;
 }
 
-.conta{
+/* Estiliza o elemento h1, aplicando a fonte 'Pixel'. */
+
+.conta {
     position: absolute;
     top: -1px;
     right: 5px;
     width: 50px;
     height: 50px;
 }
+/* Define estilo para um ícone de conta, posicionando-o absolutamente no canto superior direito. */
 
-.card img{
+.card img {
     height: 100px;
     width: 100px;
     top: 10px;
     position: relative;
 }
+/* Estiliza imagens dentro de um cartão, com dimensões fixas e posicionamento relativo. */
 
-.botaocard{
+.botaocard {
     text-decoration: none;
     color: black;
 }
+/* Remove a decoração de texto e define a cor preta para links com a classe 'botaocard'. */
 
-.titulo{
-    font-size: 80px;
-    position: absolute;
-    left: 780px;
-    top: 20px;
-}
-
-.subtitulo{
+.subtitulo {
     font-family: Pixel2;
-    position: absolute;
-    left: 810px;
-    top: 150px;
 }
+/* Define o estilo para um subtítulo, usando a fonte 'Pixel2' e posicionamento absoluto. */
 
-.maeoferta{
+.maeoferta {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
+/* Define um contêiner flexível similar a '.mae' para ofertas, com espaçamento uniforme e layout flexível. */
 
-.cardoferta{
+.cardoferta {
     border: 3px black solid;
     width: 275px;
     height: 350px;
@@ -195,25 +189,29 @@ h1{
     background-color: #561C9F;
     border-radius: 20px;
 }
+/* Estilo para um cartão de oferta, similar a '.card', mas com borda preta. */
 
-.ofertatext{
+.ofertatext {
     color: #ff0000;
 }
+/* Define a cor vermelha para textos com a classe 'ofertatext'. */
 
-.cardoferta:hover{
+.cardoferta:hover {
     color: white;
     background: linear-gradient(90deg, #b587e6, #d169d1);
-    border-color: rgb(243, 115, 243)
+    border-color: rgb(243, 115, 243);
 }
+/* Adiciona efeitos de hover para o cartão de oferta, similar a '.card:hover'. */
 
-.cardoferta img{
+.cardoferta img {
     height: 150px;
     width: 150px;
     top: 10px;
     position: relative;
 }
+/* Estiliza imagens dentro de um cartão de oferta, com dimensões fixas e posicionamento relativo. */
 
-.tec{
+.tec {
     border: solid black;
     width: 1000px;
     height: 1000px;
@@ -223,23 +221,25 @@ h1{
     top: 100px;
     border-radius: 20px;
 }
+/* Define estilo para um elemento técnico, com borda preta, dimensões fixas, fundo roxo, posicionamento relativo e cantos arredondados. */
 
-.tecvid{
+.tecvid {
     position: relative;
     left: 200px;
     top: -50px;
     border-radius: 20px;
 }
+/* Define o estilo para um vídeo técnico, com posicionamento relativo e cantos arredondados. */
 
-.textotec{
+.textotec {
     position: relative;
     top: 70px;
     color: rgb(68, 0, 255);
     font-family: pi;
-
 }
+/* Define o estilo para texto técnico, com posicionamento relativo, cor azul e fonte 'pi'. */
 
-.bottec{
+.bottec {
     border-radius: 10px;
     background-color: rgb(255, 0, 212);
     border-color: rgb(0, 0, 0);
@@ -249,9 +249,9 @@ h1{
     top: 320px;
     right: -240px;
 }
+/* Estiliza um botão técnico, com cantos arredondados, fundo rosa, borda preta, dimensões fixas e posicionamento relativo. */
 
-
-.bottec2{
+.bottec2 {
     border-radius: 10px;
     background-color: rgb(255, 252, 79);
     border-color: rgba(0, 0, 0, 0.993);
@@ -261,26 +261,37 @@ h1{
     right: -35px;
     top: 380px;
 }
+/* Estiliza um segundo botão técnico, similar a '.bottec', mas com fundo amarelo. */
 
-.desc{
+.desc {
     position: relative;
     top: 400px;
     color: rgb(32, 166, 255);
 }
+/* Define estilo para uma descrição, com posicionamento relativo e cor azul claro. */
 
-.price{
+.price {
     position: relative;
     top: 420px;
     color: rgb(255, 46, 46);
     font-family: Pixel3;
 }
+/* Define estilo para preços, com posicionamento relativo, cor vermelha e fonte 'Pixel3'. */
 
-ul,li a{
+menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+/* Remove a decoração de texto e define a cor preta para links dentro de um menu. */
+
+ul, li a {
     text-decoration: none;
     color: white;
 }
+/* Remove a decoração de texto e define a cor branca para links dentro de listas. */
 
-.menu .menuL{
+.menu .menuL {
     position: absolute;
     z-index: 999;
     width: 35px;
@@ -288,8 +299,9 @@ ul,li a{
     top: 20px;
     left: 10px;
 }
+/* Estiliza o ícone de menu, posicionando-o absolutamente com alta prioridade de empilhamento. */
 
-.menu .menuL span{
+.menu .menuL span {
     display: block;
     width: 35px;
     height: 5px;
@@ -298,8 +310,9 @@ ul,li a{
     border-radius: 3px;
     transition: 0.2s;
 }
+/* Define o estilo para as barras do ícone de menu, com cor branca, cantos arredondados e transição suave. */
 
-.menu .menufake{
+.menu .menufake {
     position: absolute;
     z-index: 1000;
     width: 35px;
@@ -309,22 +322,26 @@ ul,li a{
     top: 20px;
     left: 10px;
 }
+/* Define um checkbox oculto para o ícone de menu, usado para controlar o menu visível. */
 
-.menu .menufake:checked~.menuL span:nth-child(1){
+.menu .menufake:checked ~ .menuL span:nth-child(1) {
     transform-origin: 0% 0%;
     transform: rotate(45deg) scaleX(1.25);
 }
+/* Quando o checkbox está marcado, a primeira barra do ícone de menu é rotacionada e escalada. */
 
-.menu .menufake:checked~.menuL span:nth-child(2){
+.menu .menufake:checked ~ .menuL span:nth-child(2) {
     opacity: 0;
 }
+/* Quando o checkbox está marcado, a segunda barra do ícone de menu se torna invisível. */
 
-.menu .menufake:checked~.menuL span:nth-child(3){
+.menu .menufake:checked ~ .menuL span:nth-child(3) {
     transform-origin: 0% 100%;
     transform: rotate(-45deg) scaleX(1.25);
 }
+/* Quando o checkbox está marcado, a terceira barra do ícone de menu é rotacionada e escalada. */
 
-.menu ul{
+.menu ul {
     position: absolute;
     z-index: 998;
     top: 0;
@@ -337,41 +354,71 @@ ul,li a{
     margin-top: 0;
     padding: 0;
 }
+/* Define o estilo para o menu oculto, posicionando-o fora da tela à esquerda, com transição suave e fundo cinza escuro. */
 
-.menu .menufake:checked~ul{
+.menu .menufake:checked ~ ul {
     margin-left: 0px;
 }
+/* Quando o checkbox está marcado, o menu é deslocado para dentro da tela. */
 
-.menu ul li{
+.menu ul li {
     position: relative;
     top: 150px;
     left: 10px;
     padding: 10px 30px;
 }
+/* Define o estilo para os itens de menu, com espaçamento interno e posicionamento relativo. */
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 22px;
 }
+/* Remove a decoração de texto e define a cor branca para links dentro do menu. */
 
-.menu ul li a:hover{
+.menu ul li a:hover {
     color: #ff0000;
     transition: 0.2s;
 }
+/* Define a cor vermelha para links no menu quando estão em hover, com transição suave. */
 
-.cardcarrinho{
+.cardcarrinho {
     position: relative;
     width: 1000px;
-    border: red solid;
+    border: rgb(245, 121, 224) solid;
     height: 300px;
     left: 300px;
     top: 100px;
-
+    border-radius: 10px;
+    background-color: #561C9F;
 }
+/* Define estilo para um cartão de carrinho, com borda rosa, dimensões fixas, posicionamento relativo, fundo roxo e cantos arredondados. */
 
-.cardcarrinho img{
+.cardcarrinho img {
     width: 200px;
     position: relative;
-    top: 50px;
+    top: -195px;
+    left: -300px;
+    border-radius: 15px;
 }
+/* Estiliza imagens dentro de um cartão de carrinho, com dimensões fixas, posicionamento relativo e cantos arredondados. */
+
+.zero, .um, .dois, .tres, .quatro {
+    position: relative;
+    color: white;
+}
+/* Define estilo para várias classes, com posicionamento relativo e cor branca. */
+
+.cinco {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: -450px;
+}
+/* Define estilo para um elemento com a classe 'cinco', com dimensões fixas e posicionamento relativo. */
+
+.cardcarrinho hr {
+    position: relative;
+    top: -90px;
+}
+/* Define estilo para uma linha horizontal dentro de um cartão de carrinho, com posicionamento relativo. */
