@@ -515,3 +515,19 @@ hr{
     top: 20px;
 }
 /* Estiliza um botão técnico, com cantos arredondados, fundo verde, dimensões fixas e fonte diferente*/
+
+.fooder{
+    color: black;
+}
+/* Estiliza para a cor para preta*/
+
+footer a{
+    text-decoration: none;
+}
+/* Estiliza o elemento "a" para sem decoração*/
+
+.fooder:hover{
+    transition: 0.2s;
+    color: red;
+}
+/* Estiliza para vermelho e uma transição suave*/
