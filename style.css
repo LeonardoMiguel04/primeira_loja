@@ -255,8 +255,8 @@ h1{
     width: 200px;
     height: 50px;
     position: relative;
-    top: 320px;
-    right: -240px;
+    top: 380px;
+    right: 20px;
 }
 /* Estiliza um botão técnico, com cantos arredondados, fundo rosa, borda preta, dimensões fixas e posicionamento relativo. */
 
@@ -267,7 +267,7 @@ h1{
     width: 200px;
     height: 50px;
     position: relative;
-    right: -35px;
+    right: 460px;
     top: 380px;
 }
 /* Estiliza um segundo botão técnico, similar a '.bottec', mas com fundo amarelo. */
@@ -281,7 +281,7 @@ h1{
 
 .price {
     position: relative;
-    top: 420px;
+    top: 530px;
     color: rgb(255, 46, 46);
     font-family: Pixel3;
 }
