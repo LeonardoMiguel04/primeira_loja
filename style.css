@@ -82,6 +82,18 @@ footer {
     /* Ajusta a posição do elemento com a classe 'titulo' em telas pequenas. */
 }
 
+@media screen and (max-width: 400px) {
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "corpo"
+        "secundario"
+        "pé";
+    }
+    /* Ajusta o layout para telas com largura máxima de 400px*/
+}
+
+
 .mae {
     justify-content: space-between;
     display: flex;
