@@ -126,6 +126,10 @@ footer {
 }
 /* Define estilo para um cartão, com borda preta, dimensões fixas, layout flexível em coluna, centrado, margem, transição suave, fundo roxo e cantos arredondados. */
 
+.card h1, h2, h3{
+    color: white;
+}
+
 .card:hover {
     color: white;
     background: linear-gradient(90deg, #b587e6, #d169d1);
