@@ -91,6 +91,14 @@ footer {
         "pé";
     }
     /* Ajusta o layout para telas com largura máxima de 400px*/
+
+    .mae{
+        padding: 33px;
+    }
+
+    .maeoferta{
+        padding: 30px;
+    }
 }
 
 
@@ -157,7 +165,7 @@ footer {
 h1{
     font-family: Pixel;
 }
-
+padding: ;
 /* Estiliza o elemento h1, aplicando a fonte 'Pixel'. */
 
 .conta {
