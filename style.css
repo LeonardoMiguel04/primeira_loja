@@ -30,7 +30,7 @@ body {
 
 header {
     grid-area: cabeca;
-    background-color: #561C9F;   
+    background-color: #0A2540;   
     border: solid 2px 0px 0px;
     position: relative;
     font-family: monospace;
@@ -41,9 +41,8 @@ header {
 aside {
     grid-area: secundario;
     text-align: center;
-    border-color: black;
-    border-style: solid;
-    background-color: #360657;
+    border-color: #B0BEC5 solid;
+    background-color: #F2F2F2;
     background-image: url(file:///C:/Users/Cliente/Downloads/primeira_loja-main/imagens/NEXUS.gif);
     background-repeat: no-repeat;
     background-position: center;
@@ -52,7 +51,7 @@ aside {
 
 main {
     grid-area: corpo;
-    background-color: #17002c;
+    background-color: #FFFFFF;
     text-align: center;
 }
 /* Define o conteúdo principal para ocupar a área 'corpo' do grid, com fundo roxo muito escuro e texto centralizado. */
@@ -112,7 +111,7 @@ footer {
 /* Define um contêiner flexível com elementos espaçados uniformemente, dispostos em linha e permitindo quebra de linha, com alinhamento central. */
 
 .card {
-    border: 3px #000000 solid;
+    border: 3px #B0BEC5 solid;
     width: 275px;
     height: 350px;
     display: flex;
@@ -121,19 +120,19 @@ footer {
     text-align: center;
     margin: 20px;
     transition: 0.2s;
-    background-color: #561C9F;
+    background-color: #FFFFFF;
     border-radius: 20px;
 }
 /* Define estilo para um cartão, com borda preta, dimensões fixas, layout flexível em coluna, centrado, margem, transição suave, fundo roxo e cantos arredondados. */
 
 .card h1, h2, h3{
-    color: white;
+    color: #0A2540;
 }
 
 .card:hover {
-    color: white;
-    background: linear-gradient(90deg, #b587e6, #d169d1);
-    border-color: rgb(243, 115, 243);
+    color: rgb(0, 0, 0);
+    background: rgb(6, 6, 116);
+    border-color: rgb(154, 209, 235);
 }
 /* Adiciona efeitos de hover para o cartão, mudando a cor do texto, o fundo para um gradiente e a cor da borda. */
 
@@ -168,6 +167,7 @@ footer {
 
 h1{
     font-family: Pixel;
+    color: white;
 }
 
 /* Estiliza o elemento h1, aplicando a fonte 'Pixel'. */
@@ -210,7 +210,7 @@ h1{
 /* Define um contêiner flexível similar a '.mae' para ofertas, com espaçamento uniforme e layout flexível. */
 
 .cardoferta {
-    border: 3px black solid;
+    border: 3px #B0BEC5 solid;
     width: 275px;
     height: 350px;
     display: flex;
@@ -219,7 +219,7 @@ h1{
     text-align: center;
     margin: 20px;
     transition: 0.3s;
-    background-color: #561C9F;
+    background-color: #FFFFFF;
     border-radius: 20px;
 }
 /* Estilo para um cartão de oferta, similar a '.card', mas com borda preta. */
@@ -244,72 +244,22 @@ h1{
 }
 /* Estiliza imagens dentro de um cartão de oferta, com dimensões fixas e posicionamento relativo. */
 
-.tec {
-    border: solid black;
-    width: 1000px;
-    height: 1000px;
-    background-color: #561C9F;
+.price{
     position: relative;
-    left: 300px;
-    top: 100px;
-    border-radius: 20px;
+    bottom: -100px;
+    right: 150px;
+    
 }
-/* Define estilo para um elemento técnico, com borda preta, dimensões fixas, fundo roxo, posicionamento relativo e cantos arredondados. */
 
 .tecvid {
     position: relative;
-    left: 200px;
+    left: 400px;
     top: -50px;
     border-radius: 20px;
+    width: 700px;
+    height: 700px;
 }
 /* Define o estilo para um vídeo técnico, com posicionamento relativo e cantos arredondados. */
-
-.textotec {
-    position: relative;
-    top: 70px;
-    color: rgb(68, 0, 255);
-    font-family: pi;
-}
-/* Define o estilo para texto técnico, com posicionamento relativo, cor azul e fonte 'pi'. */
-
-.bottec {
-    border-radius: 10px;
-    background-color: rgb(255, 0, 212);
-    border-color: rgb(0, 0, 0);
-    width: 200px;
-    height: 50px;
-    position: relative;
-    top: 380px;
-    right: 20px;
-}
-/* Estiliza um botão técnico, com cantos arredondados, fundo rosa, borda preta, dimensões fixas e posicionamento relativo. */
-
-.bottec2 {
-    border-radius: 10px;
-    background-color: rgb(255, 252, 79);
-    border-color: rgba(0, 0, 0, 0.993);
-    width: 200px;
-    height: 50px;
-    position: relative;
-    right: 460px;
-    top: 380px;
-}
-/* Estiliza um segundo botão técnico, similar a '.bottec', mas com fundo amarelo. */
-
-.desc {
-    position: relative;
-    top: 400px;
-    color: rgb(32, 166, 255);
-}
-/* Define estilo para uma descrição, com posicionamento relativo e cor azul claro. */
-
-.price {
-    position: relative;
-    top: 530px;
-    color: rgb(255, 46, 46);
-    font-family: Pixel3;
-}
-/* Define estilo para preços, com posicionamento relativo, cor vermelha e fonte 'Pixel3'. */
 
 menu ul li a {
     text-decoration: none;
@@ -541,7 +491,7 @@ hr{
 /* Estiliza um botão técnico, com cantos arredondados, fundo verde, dimensões fixas e fonte diferente*/
 
 .fooder{
-    color: black;
+    color: #B0BEC5;
 }
 /* Estiliza para a cor para preta*/
 
@@ -552,6 +502,6 @@ footer a{
 
 .fooder:hover{
     transition: 0.2s;
-    color: red;
+    color: rgb(23, 74, 184);
 }
 /* Estiliza para vermelho e uma transição suave*/
