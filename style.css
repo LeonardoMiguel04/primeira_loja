@@ -368,12 +368,12 @@ ul, li a {
 .cardcarrinho {
     position: relative;
     width: 1000px;
-    border: rgb(245, 121, 224) solid;
+    border: #B0BEC5 solid;
     height: 300px;
     left: 200px;
     top: 100px;
     border-radius: 10px;
-    background-color: #561C9F;
+    background-color: #0A2540;
 }
 /* Define estilo para um cartão de carrinho, com borda rosa, dimensões fixas, posicionamento relativo, fundo roxo e cantos arredondados. */
 
@@ -458,7 +458,7 @@ ul, li a {
 /* Define para a cor branca. */
 
 hr{
-    border-color: rgb(245, 121, 224);
+    border-color: rgb(66, 145, 219);
 }
 /* Define para a cor rosa. */
 
@@ -470,13 +470,13 @@ hr{
 
 .cardresumo{
     position: relative;
-    border: rgb(245, 121, 224) solid;
+    border: #B0BEC5 solid;
     width: 300px;
     height: 470px;
     border-radius: 10px;
     left: 1300px;
     top: -205px;
-    background-color: #561C9F;
+    background-color: #0A2540;
 }
 /* Define estilo para um cartão de resumo da compra, com borda rosa, dimensões fixas, posicionamento relativo, fundo roxo e cantos arredondados. */
 
